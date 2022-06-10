@@ -1,0 +1,143 @@
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+}
+.mobile-menu__main {
+  display: flex;
+  align-items: center;
+  margin: 8px 0px;
+}
+
+.mobile-menu__open {
+  border: none;
+  background-color: transparent;
+  fill: #d41443;
+
+  padding: 0;
+  margin-left: auto;
+
+  transition: fill 250ms var(--animation-function);
+
+  &:hover,
+  &:focus {
+    fill: #ecebeb;
+  }
+}
+
+.mobile-menu__hidden {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 75vw;
+  height: 100vh;
+  z-index: 10;
+
+  display: flex;
+  flex-direction: column;
+  background-color: #e17992;
+
+  padding-top: 60px;
+
+  transform: translateX(100vw);
+
+  transition: transform 250ms var(--animation-function);
+}
+
+.mobile-menu__hidden.is-open {
+  transform: translateX(25vw);
+}
+
+.menu__button {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #d41443;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  text-align: center;
+  cursor: pointer;
+
+  width: 209px;
+  height: 44px;
+  border: 0px;
+  border-radius: 22px;
+  padding: 10px 32px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  transition: background-color 250ms var(--animation-function);
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+}
+
+/* ссылки навигации */
+
+.mobile-hidden__list {
+  display: inline-block;
+  flex-grow: 1;
+
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+}
+
+.mobile-hidden__item {
+  display: flex;
+  height: 42px;
+  justify-content: center;
+  flex-direction: column;
+
+  padding-left: 20px;
+
+  border-top: 1px solid #e18298;
+  border-bottom: 1px solid #e18298;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.mobile-hidden__link {
+  color: #ffffff;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  text-decoration: none;
+
+  display: block;
+
+  transition: color 250ms var(--animation-function);
+
+  &:hover,
+  &:focus {
+    color: #d41443;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  // margin: 8px 0px;
+}
+.logo-icon {
+  width: 50px;
+  height: 50px;
+}
+.logo-text {
+  color: #d41443;
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 1.15;
+  text-transform: uppercase;
+  margin: 0;
+  margin-left: 20px;
+}

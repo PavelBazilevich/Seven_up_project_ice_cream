@@ -1,0 +1,52 @@
+<div class="conteiner mobile-menu">
+  <div class="mobile-menu__main">
+    <a href="" class="logo">
+      <img
+        src="./images/header-hero-img/logo.png"
+        width="50"
+        height="50"
+        class="logo-icon"
+        alt="icon"
+      />
+      <p class="logo-text">icecream</p></a
+    >
+
+    <button
+      type="button"
+      class="mobile-menu__open js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg class="all-mobile-menu__icon" width="40" height="40">
+        <use href="./images/header-hero-img/icons.svg#mobile-menu-open"></use>
+      </svg>
+    </button>
+  </div>
+
+  <div class="mobile-menu__hidden js-menu-container" id="mobile-menu">
+    <button type="button" class="menu__button" data-modal-open>Buy now</button>
+    <ul class="mobile-hidden__list list">
+      <li class="mobile-hidden__item">
+        <a href="" class="mobile-hidden__link">Home</a>
+      </li>
+      <li class="mobile-hidden__item">
+        <a href="" class="mobile-hidden__link">About us</a>
+      </li>
+      <li class="mobile-hidden__item">
+        <a href="" class="mobile-hidden__link">How it’s made?</a>
+      </li>
+      <li class="mobile-hidden__item">
+        <a href="" class="mobile-hidden__link">Our products</a>
+      </li>
+      <li class="mobile-hidden__item">
+        <a href="" class="mobile-hidden__link">Contact</a>
+      </li>
+    </ul>
+
+    <button type="button" class="mobile-hidden__close-button js-close-menu">
+      <svg class="icon" width="18" height="18">
+        <use href="./images/header-hero-img/icons.svg#close"></use>
+      </svg>
+    </button>
+  </div>
+</div>

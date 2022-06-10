@@ -1,0 +1,108 @@
+.hero {
+  display: flex;
+  align-items: center;
+  background-color: var(--secondary-title-color);
+
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 194px;
+  padding-bottom: 158px;
+  background-color: #ffb8ca;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
+}
+
+.ball {
+  position: absolute;
+  top: 83px;
+  left: 36px;
+  display: inline-block;
+  width: 346px;
+  height: 344px;
+  background-color: #ffa5ba;
+  border-radius: 50%;
+}
+.hero__img {
+  position: absolute;
+  top: 92px;
+  left: 117px;
+  width: 171px;
+}
+.hero__title {
+  position: relative;
+  width: 220px;
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.25;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  margin-top: 0px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+.hero__title--color {
+  font-size: 48px;
+  line-height: 0.96;
+  color: #d41443;
+}
+
+/* кнопка в индекс */
+.hero-buttons {
+  position: relative;
+  display: flex;
+  width: 220px;
+}
+.hero__button {
+  display: inline-block;
+  background-color: #d41443;
+  color: #ffffff;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+
+  min-width: 61px;
+  border: 0px;
+  border-radius: 22px;
+  padding: 9px 14px;
+  margin: 0;
+
+  transition: background-color 250ms var(--animation-function);
+
+  &:hover,
+  &:focus {
+    background-color: #c7133e;
+  }
+  &:last-child {
+    background-color: #ffffff;
+    color: #d41443;
+    margin-left: 8px;
+
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
+    }
+  }
+}
