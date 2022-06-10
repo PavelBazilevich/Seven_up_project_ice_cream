@@ -62,6 +62,7 @@
   border-radius: 50%;
   background-color: var(--primary-text-color);
   margin-top: 32px;
+  margin-bottom: 32px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -72,6 +73,7 @@
   letter-spacing: 0.04em;
   color: var(--primary-text-color);
   margin-top: 32px;
+  margin-bottom: 30px;
 }
 .list-label-first::before {
   content: '';
@@ -84,4 +86,24 @@
   top: 0;
   left: 0;
   transform: translateY(-50%);
+}
+// .products-button {
+//   display: block;
+//   background-image: url(../images/Ice-cream_pictures/arrow-right.png);
+//   width: 40px;
+//   height: 40px;
+//   margin-right: auto;
+//   margin-left: auto;
+
+// }
+.product-button {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  &:hover {
+    color: tomato;
+  }
 }
