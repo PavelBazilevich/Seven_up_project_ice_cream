@@ -2,6 +2,7 @@
     background-color: var(--light-pink-backgrount-color);
     padding-bottom: 20px;
     position: relative; 
+   
 }
 
     .footer::after {
@@ -15,6 +16,8 @@
         background: #E1E1E1;
     }
 
+
+
 .footer-title{
     font-family: 'Titan One';
     font-weight: 400;
@@ -23,7 +26,13 @@
     text-transform: uppercase;
     color: var(--lable-text-color);
     max-width: 232px;
+    @media screen and (min-width: 768px) {
+            font-size: 26px;
+            line-height: 1.15;
+            letter-spacing: 0.04em;
+            max-width: 340px;
     }
+}
 
 .footer-title-two{
     font-family: 'Titan One';
@@ -37,6 +46,14 @@
     margin-top: 16px;
     margin-bottom: 40px;
     display: block;
+    @media screen and (min-width: 768px) {
+        font-size: 48px;
+        line-height: 1.15;
+        letter-spacing: 0.06em;
+        min-width:340px;
+        margin-top: 12px;
+        margin-bottom: 82px;
+    }
 }
 
 .footer-contact-text{
@@ -62,10 +79,18 @@
     font-size: 14px;
     line-height: 1.5;
     color: var(--secondary-text-color);
-    max-width: 140px;
+    
     text-align: center;
     display: block;
     margin: 0 auto;
+
+    @media screen and (max-width: 767px) {
+max-width: 140px;}
+
+@media screen and (min-width: 768px) {
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+}
 }
 
 .footer-link{
