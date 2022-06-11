@@ -1,8 +1,14 @@
 .products .container {
   text-align: center;
-  // @media screen and (max-width: 768px) {
-  //   width: 100%;
-  // }
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
 }
 .products-label {
   font-family: 'Titan One';
@@ -12,6 +18,11 @@
   color: var(--lable-text-color);
   margin-bottom: 15px;
   text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
 }
 .products-title {
   font-family: 'Titan One';
@@ -23,6 +34,9 @@
   text-transform: uppercase;
   margin-bottom: 148px;
   position: relative;
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+  }
 }
 
 // .products-gallery {
@@ -134,14 +148,21 @@
   width: 40px;
   height: 40px;
   border: none;
-  background-color: transparent;
+  border-radius: 50%;
+  background-color: var(--button-background-color);
   cursor: pointer;
-  &:hover {
-    color: tomato;
-  }
+  transition: background-color 250ms var(--timing-function);
+}
+.product-button:hover,
+.product-button:focus {
+  background-color: var(--hover-button-background-color);
 }
 .products-list {
   @media screen and (min-width: 768px) {
     display: flex;
   }
+}
+
+.product-btn-icon {
+  fill: var(--accent-color);
 }
