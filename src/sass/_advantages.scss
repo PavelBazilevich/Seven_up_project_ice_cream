@@ -1,0 +1,68 @@
+.advantages{
+    padding-bottom: 80px;
+    background-color: var(--light-pink-backgrount-color);
+}
+
+.advantages-list {
+    width: 230px;
+}
+
+.advantages-item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.advantages-item::before {
+    content: "";
+    display: block;
+    margin-bottom: 16px;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.advantages-item:first-child::before {
+    background-image: url("../images/Ice-cream_pictures/advantages_milking_mob_1x.png");
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url("../images/Ice-cream_pictures/advantages_milking_mob_2x.png"); 
+    }
+}
+
+.advantages-item:nth-child(2)::before {
+    background-image: url("../images/Ice-cream_pictures/advantages_weight_mob_1x.png");
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url("../images/Ice-cream_pictures/advantages_weight_mob_2x.png"); 
+    }
+}
+
+.advantages-item:last-child::before {
+    background-image: url("../images/Ice-cream_pictures/advantages_ice-cream_mob_1x.png");
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url("../images/Ice-cream_pictures/advantages_ice-cream_mob_2x.png"); 
+    }
+}
+
+.advantages-text {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.7;
+    color: var(--text-color);
+}
+
+.advantages-account {
+    display: block;
+    font-family: 'Titan One';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--accent-color);
+}
