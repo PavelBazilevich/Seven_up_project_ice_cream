@@ -71,6 +71,10 @@
 
   position: relative;
   border-radius: 24px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   &:not(:last-child) {
     margin-bottom: 140px;
   }
@@ -110,10 +114,7 @@
   @media screen and (min-width: 768px) {
     max-width: 224px;
     max-height: 473px;
-    padding: 118px 32px 40px 32px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    padding: 118px 31px 40px 31px;
 
     &:not(:last-child) {
       margin-right: 16px;
@@ -125,7 +126,7 @@
   @media screen and (min-width: 1280px) {
     max-width: 395px;
     max-height: 535px;
-    padding: 165px 75px 60px 75px;
+    padding: 165px 75px 55px 75px;
     &:not(:last-child) {
       margin-right: 32px;
     }
