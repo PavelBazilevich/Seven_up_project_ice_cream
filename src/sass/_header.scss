@@ -116,8 +116,8 @@
 
   &.size {
     width: 186px;
-    margin-bottom: 20px;
     margin: 0 auto;
+    margin-bottom: 20px;
     @media screen and (max-width: 767.98px) {
       display: block;
     }
@@ -153,7 +153,7 @@
   }
 
   @media screen and (min-width: 768px) {
-    width: 33vw;
+    width: 40vw;
     height: 100vh;
   }
 }
@@ -165,7 +165,7 @@
     transform: translateX(50vw);
   }
   @media screen and (min-width: 768px) {
-    transform: translateX(67vw);
+    transform: translateX(60vw);
   }
 }
 
