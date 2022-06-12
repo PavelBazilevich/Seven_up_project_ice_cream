@@ -1,6 +1,14 @@
 .reviews {
   padding-top: 80px;
   padding-bottom: 53px;
+  @media screen and (min-width: 768px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .text-decoration {
