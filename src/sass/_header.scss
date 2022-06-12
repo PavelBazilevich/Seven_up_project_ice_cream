@@ -3,8 +3,16 @@
   align-items: center;
   background-color: var(--lable-text-color);
 
+  margin-top: 8px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+    margin-top: 32px;
+  }
+
   @media screen and (min-width: 1280px) {
     justify-content: space-between;
+    margin-top: 37px;
   }
 }
 
