@@ -1,0 +1,115 @@
+.mobile-tablet-header {
+  display: flex;
+  align-items: center;
+  background-color: var(--lable-text-color);
+
+  @media screen and (min-width: 1280px) {
+    justify-content: space-between;
+  }
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+
+  &:hover .header-logo-label,
+  &:focus .header-logo-label {
+    color: var(--btn-hover-accent);
+  }
+}
+
+.header-logo-icon {
+  width: 50px;
+}
+
+.header-logo-label {
+  color: var(--accent-color);
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 1.15;
+  text-transform: uppercase;
+  margin: 0;
+  margin-left: 20px;
+
+  transition: color 250ms var(--timing-function);
+}
+
+.main-nav {
+  @media screen and (max-width: 1279.98px) {
+    display: none;
+  }
+}
+
+.main-nav-list {
+  display: flex;
+}
+.main-nav-item + .main-nav-item {
+  margin-left: 35px;
+}
+.main-nav-link {
+  color: var(--accent-color);
+
+  transition: color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--primary-text-color);
+  }
+}
+
+.header-burger-btn {
+  border: 1px solid tomato;
+  background-color: rgba(0, 0, 0, 0);
+  fill: var(--accent-color);
+  padding: 0;
+  margin-left: auto;
+  transition: fill 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    fill: var(--primary-text-color);
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.tablet-buy-btn {
+  display: inline-block;
+  background-color: var(--button-background-color);
+  color: var(--accent-color);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  min-width: 160px;
+  height: 44px;
+  border: 0px;
+  border-radius: 22px;
+  padding: 9px 37px;
+  margin: 0;
+  margin-left: 32px;
+  transition: background-color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover-button-background-color);
+  }
+
+  @media screen and (max-width: 767.98px) {
+    display: none;
+  }
+}
+
+.tablet-btn-icon-vector {
+  fill: var(--accent-color);
+  width: 4px;
+  height: 8px;
+  margin-left: 12px;
+}
