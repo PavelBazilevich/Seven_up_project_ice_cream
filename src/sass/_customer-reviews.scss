@@ -1,0 +1,109 @@
+.reviews {
+  padding-top: 80px;
+  padding-bottom: 53px;
+}
+
+.text-decoration {
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  @media screen and (min-width: 768px) {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 214px;
+    padding-right: 214px;
+  }
+}
+
+.reviews-image {
+  width: 85px;
+  height: 85px;
+  margin: 0 auto;
+  margin-bottom: 75px;
+}
+
+.reviews-text {
+  position: relative;
+  width: 100%;
+  font-size: 12px;
+  line-height: 255%;
+  text-align: center;
+  margin-bottom: 40px;
+  padding-left: 13px;
+  padding-right: 11px;
+  padding-bottom: 5px;
+
+  color: var(--text-color);
+
+  background-image: repeating-linear-gradient(
+    transparent,
+    transparent 29px,
+    #e1e1e1 31px
+  );
+  &::before {
+    content: '';
+    background-image: url(../images/icons/quotes.svg);
+    background-size: cover;
+    width: 60px;
+    height: 40px;
+    color: #e1e1e1;
+    position: absolute;
+    top: -17px;
+    left: 0px;
+    z-index: -1;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 216%;
+    letter-spacing: 0.04em;
+    padding-left: 45px;
+    padding-right: 50px;
+    padding-bottom: 5px;
+    margin-bottom: 40px;
+    background-image: repeating-linear-gradient(
+      transparent,
+      transparent 29px,
+      #e1e1e1 31px
+    );
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 186%;
+    padding-left: 36px;
+    padding-right: 36px;
+    margin-bottom: 47px;
+  }
+}
+
+.reviews-name {
+  font-size: 14px;
+  line-height: 186%;
+  text-align: center;
+
+  color: var(--text-color);
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+  }
+}
+
+.point-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+.point-item {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  margin-bottom: 16px;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
