@@ -13,7 +13,7 @@
   }
 }
 
-.contacts-card__list {
+.contacts-card-list {
   margin-bottom: 32px;
 
   @media screen and (min-width: 768px) {
@@ -22,7 +22,7 @@
   }
 }
 
-.contacts-card__item {
+.contacts-card-item {
   width: 100%;
   margin: 0 auto;
   padding: 40px 32px;
@@ -53,7 +53,7 @@
   }
 }
 
-.contacts-card__top-text {
+.contacts-card-top-text {
   min-width: 80px;
   margin-bottom: 20px;
   font-weight: 500;
@@ -76,7 +76,7 @@
     letter-spacing: 0.04em;
   }
 
-  &.top-text--second {
+  &.second {
     min-width: 130px;
     background-color: #c2e297;
 
@@ -93,7 +93,7 @@
   border-bottom: 1px solid #e1e1e1;
 }
 
-.location__text-city {
+.location-text-city {
   margin-bottom: 8px;
   font-weight: 500;
   font-size: 12px;
@@ -113,7 +113,7 @@
   }
 }
 
-.location__text-description {
+.location-text-description {
   width: 180px;
   margin-bottom: 24px;
   font-weight: 500;
@@ -134,7 +134,7 @@
   }
 }
 
-.work-time__list {
+.work-time-list {
   margin-top: 24px;
   margin-bottom: 24px;
   padding-bottom: 24px;
@@ -142,11 +142,11 @@
   border-bottom: 1px solid #e1e1e1;
 }
 
-.work-time__item:not(:last-child) {
+.work-time-item:not(:last-child) {
   margin-bottom: 8px;
 }
 
-.work-time__text-day {
+.work-time-text-day {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.83;
@@ -165,7 +165,7 @@
   }
 }
 
-.work-time__text-time {
+.work-time-text-time {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.83;
@@ -184,7 +184,7 @@
   }
 }
 
-.contacts__link {
+.contacts-link {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
@@ -211,7 +211,7 @@
   }
 }
 
-.contacts-btn__list {
+.contacts-btn-list {
   margin-top: 32px;
   text-align: center;
 
@@ -226,13 +226,13 @@
   }
 }
 
-.contacts-btn__item:not(:last-child) {
+.contacts-btn-item:not(:last-child) {
   @media screen and (max-width: 767px) {
     margin-bottom: 10px;
   }
 }
 
-.btn--secondary {
+.contacts-btn.secondary {
   min-width: 162px;
   height: 44px;
 
@@ -266,7 +266,7 @@
   }
 }
 
-.btn--main {
+.contacts-btn.main {
   min-width: 162px;
   height: 44px;
 
@@ -301,10 +301,10 @@
   }
 }
 
-.contacts-btn__icon-secondary {
+.contacts-btn-icon.secondary {
   margin-left: 13px;
 }
 
-.contacts-btn__icon-main {
+.contacts-btn-icon.main {
   margin-left: 13px;
 }
