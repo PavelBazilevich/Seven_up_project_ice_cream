@@ -72,6 +72,8 @@
   stroke: var(--accent-color);
   padding: 0;
   margin-left: auto;
+
+  cursor: pointer;
   transition: stroke 250ms var(--timing-function);
 
   &:hover,
