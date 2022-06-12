@@ -86,7 +86,69 @@
           <use href="./images/icons/symbol-defs.svg#close"></use>
         </svg>
       </button>
-      <p class="modal__title">Buy our products now!</p>
+      <p class="modal__title">Leave your information, we will call you back</p>
+
+      <form class="modal-form">
+        <label class="modal-form__label" for="modal-form__name">Name</label>
+        <div class="modal-form__input-modal-wrap">
+          <input
+            class="modal-form__input-modal"
+            type="text"
+            name="modal-name"
+            id="modal-name"
+          />
+        </div>
+
+        <label class="modal-form__label" for="modal-form__tel">Telephone</label>
+        <div class="modal-form__input-modal-wrap">
+          <input
+            class="modal-form__input-modal"
+            type="tel"
+            name="modal-tel"
+            id="modal-tel"
+          />
+        </div>
+
+        <label class="modal-form__label" for="modal-form__email">E-mail</label>
+        <div class="modal-form__input-modal-wrap">
+          <input
+            class="modal-form__input-modal"
+            type="email"
+            name="modal-email"
+            id="modal-email"
+          />
+        </div>
+
+        <label class="modal-form__label" for="modal-form__area">Comments</label>
+        <textarea
+          class="modal-form__modal-area"
+          name="modal-area"
+          id="modal-area"
+          placeholder="Enter text"
+        ></textarea>
+
+        <div class="modal-form__modal-field">
+          <input
+            class="modal-form__input-check visually-hidden"
+            type="checkbox"
+            name="politicy"
+            id="modal-check"
+          />
+          <label class="modal-form__check-text" for="modal-check">
+            <span class="modal-form__icon-border"> </span>
+            <span>I agree with the newsletter and accept</span>
+            <a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              class="modal-form__link"
+              >Terms of an agreement</a
+            >
+          </label>
+        </div>
+
+        <button class="modal-form__button" type="submit">Send</button>
+      </form>
     </div>
   </div>
 </div>
