@@ -28,16 +28,47 @@
       </ul>
     </nav>
 
-    <button class="header-burger-btn">
+    <button
+      class="header-burger-btn js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
       <svg width="20" height="20">
-        <use href="./images/icons/symbol-defs.svg#icon-burger"></use>
+        <use href="./images/icons/symbol-defs.svg#burger"></use>
       </svg>
     </button>
     <button class="tablet-buy-btn">
       Buy now
-      <svg class="tablet-btn-icon-vector" width="20" height="20">
+      <svg class="tablet-btn-icon-vector" width="4" height="8">
         <use href="./images/icons/symbol-defs.svg#icon-btn-vector"></use>
       </svg>
     </button>
+
+    <div class="mobile-menu-hidden js-menu-container" id="mobile-menu">
+      <button type="button" class="menu__button">Buy now</button>
+      <ul class="mobile-hidden-list">
+        <li class="mobile-hidden-item">
+          <a href="" class="mobile-hidden-link">Home</a>
+        </li>
+        <li class="mobile-hidden-item">
+          <a href="" class="mobile-hidden-link">About us</a>
+        </li>
+        <li class="mobile-hidden-item">
+          <a href="" class="mobile-hidden-link">How it’s made?</a>
+        </li>
+        <li class="mobile-hidden-item">
+          <a href="" class="mobile-hidden-link">Our products</a>
+        </li>
+        <li class="mobile-hidden-item">
+          <a href="" class="mobile-hidden-link">Contact</a>
+        </li>
+      </ul>
+
+      <button type="button" class="mobile-hidden__close-button js-close-menu">
+        <svg class="icon" width="18" height="18">
+          <use href="./images/icons/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
   </div>
 </div>
