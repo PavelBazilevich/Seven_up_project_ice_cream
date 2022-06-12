@@ -225,6 +225,7 @@
   border: none;
   background-color: transparent;
   stroke: var(--primary-text-color);
+  cursor: pointer;
 
   transition: stroke 250ms var(--timing-function);
 
@@ -304,6 +305,7 @@
   background-color: transparent;
   border: transparent;
   stroke: var(--accent-color);
+  cursor: pointer;
 
   transition: stroke 250ms var(--timing-function);
 
