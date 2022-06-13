@@ -486,3 +486,7 @@
     background-color: var(--hover-button-background-color);
   }
 }
+
+.no-scroll {
+  overflow: hidden;
+}
