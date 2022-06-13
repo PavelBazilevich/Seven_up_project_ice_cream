@@ -275,26 +275,18 @@
   line-height: 1.41;
 
   color: var(--accent-color);
-  background: #ffffff;
-}
-.content__button::after {
-  content: '';
+  background-color: #ffffff;
 
-  position: absolute;
-  top: 19px;
-  right: 28px;
+  transition: background-color 250ms var(--timing-function);
 
-  width: 4.43px;
-  height: 9px;
-
-  //   background-image: url(./);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   &:hover,
   &:focus {
     background-color: var(--hover-button-background-color);
   }
+}
+.content__button__svg {
+  margin-left: 13px;
+  stroke: var(--accent-color);
 }
 /* Modal */
 .modal-more {
@@ -308,10 +300,16 @@
   visibility: hidden;
 
   background-color: #5551529e;
+
+  transition: transform 250ms var(--timing-function),
+    opacity 250ms var(--timing-function);
 }
 .modal-more:target {
   opacity: 1;
   visibility: visible;
+
+  transition: transform 250ms var(--timing-function),
+    opacity 250ms var(--timing-function);
 }
 .modal-more__fon {
   position: fixed;
@@ -357,21 +355,21 @@
   align-items: center;
   top: 0px;
   right: 0px;
-  width: 25px;
-  height: 25px;
   border-radius: 50%;
-  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  background-color: #f7d0da;
+}
+.modal-more__close__svg {
+  width: 30px;
+  height: 30px;
+  stroke: var(--accent-color);
+  transition: stroke 250ms var(--timing-function);
+  border-radius: 50%;
 
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 1.41;
-  color: #000000;
   &:hover,
   &:focus {
-    color: var(--accent-color);
-    background-color: var(--hover-button-background-color);
+    stroke: #fff;
   }
 }
 
