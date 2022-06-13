@@ -62,13 +62,13 @@
   margin-left: 35px;
 }
 .main-nav-link {
-  color: var(--accent-color);
+  color: var(--primary-text-color);
 
   transition: color 250ms var(--timing-function);
 
   &:hover,
   &:focus {
-    color: var(--primary-text-color);
+    color: var(--accent-color);
   }
 }
 
