@@ -162,3 +162,9 @@
             margin-bottom: 68px;
     }
 }
+
+.footer-tablet{
+    @media screen and (min-width: 1280px) {
+            padding-top: 12px;
+    }
+}
