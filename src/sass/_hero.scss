@@ -43,16 +43,18 @@
   padding-top: 9px;
   margin-left: auto;
 
+  @media screen and (max-width: 400px) {
+    margin-left: 16px;
+  }
+
   @media screen and (min-width: 768px) {
     width: 335px;
     height: 335px;
-    padding-top: 37px;
   }
 
   @media screen and (min-width: 1280px) {
     width: 534px;
     height: 534px;
-    padding-top: 54px;
   }
 
   &-img {
@@ -217,7 +219,6 @@
     width: 114px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 
     @media screen and (min-width: 1280px) {
       width: 200px;
@@ -308,13 +309,12 @@
   }
 
   &-content {
-    // padding-right: 16px;
     font-family: DM Sans, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 8px;
     line-height: calc(10 / 8);
-    text-align: right;
+    text-align: center;
     color: var(--primary-text-color);
     text-transform: lowercase;
 
