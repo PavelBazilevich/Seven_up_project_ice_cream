@@ -4,24 +4,42 @@
   @media screen and (min-width: 768px) {
     padding-top: 80px;
     padding-bottom: 80px;
+    margin-left: 42px;
+    margin-right: 42px;
   }
   @media screen and (min-width: 1280px) {
     padding-top: 120px;
     padding-bottom: 120px;
+    margin-left: 107px;
+    margin-right: 107px;
+  }
+}
+
+.reviews-bg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: var(--reviews-bg);
+  z-index: -2;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 4px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 16px;
   }
 }
 
 .text-decoration {
   width: 100%;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 43px 50px 0 50px;
   @media screen and (min-width: 768px) {
-    padding-left: 48px;
-    padding-right: 48px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-bottom: 36px;
   }
   @media screen and (min-width: 1280px) {
-    padding-left: 214px;
-    padding-right: 214px;
+    padding-left: 107px;
+    padding-right: 107px;
   }
 }
 
@@ -29,7 +47,13 @@
   width: 85px;
   height: 85px;
   margin: 0 auto;
-  margin-bottom: 75px;
+  margin-bottom: 32px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 16px;
+  }
 }
 
 .reviews-text {
@@ -41,7 +65,7 @@
   margin-bottom: 40px;
   padding-left: 13px;
   padding-right: 11px;
-  padding-bottom: 5px;
+  padding-bottom: 26px;
 
   color: var(--text-color);
 
@@ -59,21 +83,21 @@
     color: #e1e1e1;
     position: absolute;
     top: -17px;
-    left: 0px;
+    left: 0;
     z-index: -1;
   }
+
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 216%;
     letter-spacing: 0.04em;
+    margin-bottom: 0;
     padding-left: 45px;
     padding-right: 50px;
-    padding-bottom: 5px;
-    margin-bottom: 40px;
     background-image: repeating-linear-gradient(
       transparent,
-      transparent 29px,
-      #e1e1e1 31px
+      transparent 30px,
+      #e1e1e1 32px
     );
   }
   @media screen and (min-width: 1280px) {
@@ -81,7 +105,7 @@
     line-height: 186%;
     padding-left: 36px;
     padding-right: 36px;
-    margin-bottom: 47px;
+    margin-bottom: 0;
   }
 }
 
@@ -109,7 +133,7 @@
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background-color: var(--accent-color);
+  background-color: var(--btn-hover-accent);
   margin-bottom: 16px;
   &:not(:last-child) {
     margin-right: 10px;
