@@ -14,14 +14,24 @@
 //   }
 // }
 .products {
+  padding-top: 80px;
   padding-bottom: 40px;
+
   @media screen and (min-width: 768px) {
+    padding-top: 40px;
     padding-bottom: 60px;
   }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 60px;
+
+  }
 }
+
 .products .container {
   text-align: center;
 }
+
 .products-label {
   font-family: 'Titan One';
   font-weight: 400;
@@ -35,11 +45,13 @@
     font-size: 26px;
     line-height: 1.15;
   }
+
   @media screen and (min-width: 1280px) {
     font-size: 30px;
     line-height: 1.33;
   }
 }
+
 .products-title {
   font-family: 'Titan One';
   font-weight: 400;
@@ -50,10 +62,12 @@
   text-transform: uppercase;
   margin-bottom: 148px;
   position: relative;
+
   @media screen and (min-width: 768px) {
     font-size: 48px;
     margin-bottom: 154px;
   }
+
   @media screen and (min-width: 1280px) {
     font-size: 58px;
     line-height: 1.14;
@@ -75,6 +89,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
   &:not(:last-child) {
     margin-bottom: 140px;
   }
@@ -82,12 +97,15 @@
   &:nth-child(3n + 1) {
     background-color: var(--darc-pink-background-color);
   }
+
   &:nth-child(3n + 2) {
     background-color: #f0d1a5;
   }
+
   &:nth-child(3n + 3) {
     background-color: #c2e297;
   }
+
   &::before {
     content: '';
     display: block;
@@ -98,12 +116,14 @@
     top: 0;
     left: 50%;
     transform: translate(-50%, -50%);
+
     @media screen and (min-width: 768px) {
       width: 224px;
       height: 224px;
       transform: translateY(-61%);
       left: 0;
     }
+
     @media screen and (min-width: 1280px) {
       width: 394px;
       height: 394px;
@@ -111,6 +131,7 @@
       left: 0;
     }
   }
+
   @media screen and (min-width: 768px) {
     max-width: 224px;
     max-height: 473px;
@@ -119,14 +140,17 @@
     &:not(:last-child) {
       margin-right: 16px;
     }
+
     &:nth-child(-n + 2) {
       margin-bottom: 0;
     }
   }
+
   @media screen and (min-width: 1280px) {
     max-width: 395px;
     max-height: 535px;
     padding: 165px 75px 55px 75px;
+
     &:not(:last-child) {
       margin-right: 32px;
     }
@@ -141,6 +165,7 @@
   letter-spacing: 0.04em;
   color: var(--primary-text-color);
   text-transform: uppercase;
+
   @media screen and (min-width: 1280px) {
     font-size: 30px;
     line-height: 1.33;
@@ -166,23 +191,27 @@
   letter-spacing: 0.04em;
   color: var(--primary-text-color);
   margin-top: 32px;
+
   // margin-bottom: 30px;
   @media screen and (min-width: 768px) {
     line-height: 1.79;
     // margin-bottom: 32px;
     // height: 150px;
   }
+
   @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: 1.75;
     height: 106px;
   }
 }
+
 .text-hidden {
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
+
 .list-label-first::before {
   background-image: url(../images/Ice-cream_pictures/products_ice-cream_mob_1x.png);
 
@@ -190,21 +219,25 @@
     background-image: url(../images/Ice-cream_pictures/products_ice-cream_tab_1x.png);
     background-size: cover;
   }
+
   @media screen and (min-width: 1280px) {
     background-image: url(../images/Ice-cream_pictures/products_ice-cream_desk_1x.png);
     background-size: cover;
   }
 }
+
 @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
   .list-label-first::before {
     background-image: url(../images/Ice-cream_pictures/products_ice-cream_mob_2x.png);
     background-size: cover;
+
     @media screen and (min-width: 768px) {
       background-image: url(../images/Ice-cream_pictures/products_ice-cream_tab_2x.png);
       background-size: cover;
     }
+
     @media screen and (min-width: 1280px) {
       background-image: url(../images/Ice-cream_pictures/products_ice-cream_desk_2x.png);
       background-size: cover;
@@ -218,42 +251,52 @@
   @media screen and (min-width: 768px) {
     background-image: url(../images/Ice-cream_pictures/products_ice-coffee_tab_1x.png);
   }
+
   @media screen and (min-width: 1280px) {
     background-image: url(../images/Ice-cream_pictures/products_ice-coffee_desk_1x.png);
   }
 }
+
 @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
   .list-label-second::before {
     background-image: url(../images/Ice-cream_pictures/products_ice-coffee_mob_2x.png);
     background-size: cover;
+
     @media screen and (min-width: 768px) {
       background-image: url(../images/Ice-cream_pictures/products_ice-coffee_tab_2x.png);
     }
+
     @media screen and (min-width: 1280px) {
       background-image: url(../images/Ice-cream_pictures/products_ice-coffee_desk_2x.png);
     }
   }
 }
+
 .list-label-third::before {
   background-image: url(../images/Ice-cream_pictures/products_milkshakes_mob_1x.png);
+
   @media screen and (min-width: 768px) {
     background-image: url(../images/Ice-cream_pictures/products_milkshakes_tab_1x.png);
   }
+
   @media screen and (min-width: 1280px) {
     background-image: url(../images/Ice-cream_pictures/products_milkshakes_desk_1x.png);
   }
 }
+
 @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
   .list-label-third::before {
     background-image: url(../images/Ice-cream_pictures/products_milkshakes_mob_2x.png);
     background-size: cover;
+
     @media screen and (min-width: 768px) {
       background-image: url(../images/Ice-cream_pictures/products_milkshakes_tab_2x.png);
     }
+
     @media screen and (min-width: 1280px) {
       background-image: url(../images/Ice-cream_pictures/products_milkshakes_desk_2x.png);
     }
@@ -273,18 +316,22 @@
   background-color: var(--button-background-color);
   cursor: pointer;
   transition: background-color 250ms var(--timing-function);
+
   @media screen and (min-width: 1280px) {
     margin-top: 60px;
   }
 }
+
 .product-button:hover,
 .product-button:focus {
   background-color: var(--hover-button-background-color);
 }
+
 .products-list {
   @media screen and (min-width: 768px) {
     display: flex;
   }
+
   // @media screen and (min-width: 1280px) {
   //   margin-bottom: 60px;
   // }
