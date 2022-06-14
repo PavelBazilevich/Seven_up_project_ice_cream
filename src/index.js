@@ -47,7 +47,6 @@
   }
 })();
 
-
 (() => {
   const refs = {
     openAboutBtn: document.querySelector('[data-about-open]'),
@@ -65,25 +64,22 @@
   }
 })();
 
-
 (() => {
   const refs = {
-    openFranchiseBtn: document.querySelector(".franchise-modal"),
-    closeFranchiseBtn: document.querySelector(".franchise-modal-close-btn"),
-    franchise: document.querySelector(".franchise-backdrop"),
-    body: document.querySelector("body"),
+    openFranchiseBtn: document.querySelector('.franchise-modal'),
+    closeFranchiseBtn: document.querySelector('.franchise-modal-close-btn'),
+    franchise: document.querySelector('.franchise-backdrop'),
+    body: document.querySelector('body'),
   };
 
-  refs.openFranchiseBtn.addEventListener("click", toggleMenu);
-  refs.closeFranchiseBtn.addEventListener("click", toggleMenu);
+  refs.openFranchiseBtn.addEventListener('click', toggleMenu);
+  refs.closeFranchiseBtn.addEventListener('click', toggleMenu);
 
   function toggleMenu() {
-    refs.franchise.classList.toggle("is-hidden");
-    refs.body.classList.toggle("no-scroll");
+    refs.franchise.classList.toggle('is-hidden');
+    refs.body.classList.toggle('no-scroll');
   }
 })();
-
-
 
 (() => {
   const refs = {
@@ -102,3 +98,17 @@
   }
 })();
 
+const anchors = document.querySelectorAll('a[href*="#"]');
+
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const blockID = anchor.getAttribute('href').substr(1);
+
+    document.getElementById(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  });
+}
