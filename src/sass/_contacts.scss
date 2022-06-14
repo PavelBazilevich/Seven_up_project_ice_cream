@@ -30,10 +30,6 @@
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
 
-  @media screen and (min-width: 480px) {
-    max-width: 280px;
-  }
-
   @media screen and (min-width: 768px) {
     max-width: 224px;
     flex-basis: calc(100% / 2 - 32px);
