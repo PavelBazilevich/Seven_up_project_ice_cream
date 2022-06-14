@@ -310,7 +310,6 @@
   margin-left: 13px;
 }
 
-
 .contacts-loc-backdrop {
   position: fixed;
   padding: 0 15px;
@@ -331,8 +330,8 @@
   
   visibility: visible;
   opacity: 1;
-  transition: opacity var(--typical-transition-duration) var(--typical-transition-timing-function),
-  visibility var(--typical-transition-duration) var(--typical-transition-timing-function);
+  transition: opacity 250ms var(--timing-function),
+  visibility 250ms var(--timing-function);
 
   &.is-hidden {
       opacity: 0;
@@ -365,7 +364,7 @@
   border-radius: 4px;
 
   transform: scale(1);
-  transition: transform var(--typical-transition-duration) var(--typical-transition-timing-function);
+  transition: transform 250ms var(--timing-function);
 
   @media screen and (min-width: 480px) {
       width: 450px;
