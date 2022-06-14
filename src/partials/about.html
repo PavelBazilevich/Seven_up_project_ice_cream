@@ -29,30 +29,58 @@
           </span>
         </p>
         <!-- Button -->
-        <a href="#modal-more" class="content__button">
+        <button class="content__button" data-about-open>
           Read more
           <svg class="content__button__svg" width="8" height="10">
             <use href="./images/icons/symbol-defs.svg#icon-btn-vector"></use>
           </svg>
-        </a>
+        </button>
       </div>
     </div>
   </div>
-  <div id="modal-more" class="modal-more">
-    <a href="#about" class="modal-more__fon"></a>
-    <div class="modal-more__body">
-      <div class="modal-more__content">
-        <a href="#about" class="modal-more__close">
-          <svg class="modal-more__close__svg">
-            <use href="./images/icons/symbol-defs.svg#close"></use>
-          </svg>
-        </a>
-        <h2 class="modal-more__title">Read more</h2>
-        <img
-          class="content__img"
-          src="./images/Ice-cream_pictures/about_cow-milk_desk_2x.png"
-          alt="cau"
-        />
+  <div class="modal-more backdrop is-hidden" data-about>
+    <div class="modal-more__window">
+      <button class="modal-more__close" data-about-close>
+        <svg class="modal-more__close__svg">
+          <use href="./images/icons/symbol-defs.svg#close"></use>
+        </svg>
+      </button>
+      <h2 class="modal-more__title">Learn more</h2>
+      <img
+        class="modal-more__fon"
+        src="./images/Ice-cream_pictures/hero_ice-cream_tab_2x.png"
+      />
+      <img
+        class="modal-more__fon-tab-des"
+        src="./images/Ice-cream_pictures/hero_milkjug_desk_1x.png"
+      />
+      <div class="modal-more__vidio">
+        <iframe
+          src="https://www.youtube.com/embed/2Yd2HhKIsiE?controls=0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="modal-more__text">
+        <h2 class="modal-more__text-title">ICE CREAM MADE WITH PASSION</h2>
+        <p class="modal-more__text-content">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+          cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
+          justo fringilla. Curabitur lacinia enim at ex blandit, vel
+          pellentesque odio elementum. Mauris rhoncus orci in imperdiet
+          placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat
+          urna maximus. Cras massa nibh, tincidunt. Aliquam erat volutpat.
+          Aenean accumsan.
+        </p>
+      </div>
+      <div class="modal-more__email">
+        <lable class="modal-more__lable"
+          >Leave your mail and we will contact you
+          <input class="modal-lable__input" />
+        </lable>
+        <button class="modal-more__button">send</button>
       </div>
     </div>
   </div>
