@@ -490,3 +490,17 @@
 .no-scroll {
   overflow: hidden;
 }
+
+.in-shadow::before {
+  content: '';
+  z-index: 11;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -100vw;
+  visibility: visible;
+  opacity: 1;
+}
