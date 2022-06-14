@@ -27,7 +27,7 @@
     bodyScrollLock.enableBodyScroll(document.body);
   });
 })();
-  
+
 (() => {
   const refs = {
     openModalBtn: document.querySelectorAll('[data-modal-open]'),
@@ -36,11 +36,31 @@
     body: document.querySelector('body'),
   };
 
-  refs.openModalBtn.forEach(link => link.addEventListener('click', toggleModal));
+  refs.openModalBtn.forEach(link =>
+    link.addEventListener('click', toggleModal)
+  );
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
+    refs.body.classList.toggle('no-scroll');
+  }
+})();
+
+
+(() => {
+  const refs = {
+    openAboutBtn: document.querySelector('[data-about-open]'),
+    closeAboutBtn: document.querySelector('[data-about-close]'),
+    about: document.querySelector('[data-about]'),
+    body: document.querySelector('body'),
+  };
+
+  refs.openAboutBtn.addEventListener('click', toggleAbout);
+  refs.closeAboutBtn.addEventListener('click', toggleAbout);
+
+  function toggleAbout() {
+    refs.about.classList.toggle('is-hidden');
     refs.body.classList.toggle('no-scroll');
   }
 })();
