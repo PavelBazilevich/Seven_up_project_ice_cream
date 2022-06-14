@@ -42,6 +42,8 @@
   border-radius: 50%;
   padding-top: 9px;
   margin-left: auto;
+  animation: zoomIn; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
 
   @media screen and (max-width: 400px) {
     margin-left: 16px;
@@ -61,6 +63,9 @@
     width: 171px;
     height: 410px;
     margin: 0 auto;
+
+    animation: flipInY; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
 
     @media screen and (min-width: 768px) {
       width: 143px;
@@ -199,6 +204,8 @@
       height: 154px;
       top: 50%;
       left: 0;
+      animation: zoomInLeft; /* referring directly to the animation's @keyframe declaration */
+      animation-duration: 2s; /* don't forget to set a duration! */
     }
   }
 
@@ -355,6 +362,8 @@
   &-img {
     position: absolute;
     bottom: 0;
+    animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 3s; /* don't forget to set a duration! */
 
     @media screen and (min-width: 768px) {
       right: 32px;

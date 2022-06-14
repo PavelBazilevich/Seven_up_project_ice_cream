@@ -1,17 +1,12 @@
 <section id="about" class="about">
   <div class="container">
     <!-- Title -->
-    <label class="label"
-      >tradition and love
-      <h1 class="label__title">how it’s made?</h1></label
-    >
+    <p class="label">tradition and love
+    <h2 class="label__title">how it’s made?</h2>
+    </p>
     <div class="content">
       <!-- Images -->
-      <img
-        class="content__img"
-        src="./images/Ice-cream_pictures/about_cow-milk_desk_2x.png"
-        alt="cau"
-      />
+      <img class="content__img" src="./images/Ice-cream_pictures/about_cow-milk_desk_2x.png" alt="cau" />
       <!-- Text -->
       <div class="content__inform">
         <p class="content__bold-text">
@@ -29,7 +24,7 @@
           </span>
         </p>
         <!-- Button -->
-        <button class="content__button" data-about-open>
+        <button class="content__button" type="button" data-about-open>
           Read more
           <svg class="content__button__svg" width="8" height="10">
             <use href="./images/icons/symbol-defs.svg#icon-btn-vector"></use>
@@ -38,14 +33,16 @@
       </div>
     </div>
   </div>
+
+  <!-- modal -->
   <div class="modal-more backdrop is-hidden" data-about>
     <div class="modal-more__window">
-      <button class="modal-more__close" data-about-close>
+      <button class="modal-more__close" type="button" data-about-close>
         <svg class="modal-more__close__svg">
           <use href="./images/icons/symbol-defs.svg#close"></use>
         </svg>
       </button>
-      <h2 class="modal-more__title">Learn more</h2>
+      <p class="modal-more__title">Learn more</p>
       <img
         class="modal-more__fon"
         src="./images/Ice-cream_pictures/hero_ice-cream_tab_2x.png"
@@ -64,7 +61,7 @@
         ></iframe>
       </div>
       <div class="modal-more__text">
-        <h2 class="modal-more__text-title">ICE CREAM MADE WITH PASSION</h2>
+        <p class="modal-more__text-title">ICE CREAM MADE WITH PASSION</p>
         <p class="modal-more__text-content">
           Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
           cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
@@ -76,11 +73,16 @@
         </p>
       </div>
       <div class="modal-more__email">
-        <lable class="modal-more__lable"
+        <lable class="modal-more__lable" for="modal-more-input"
           >Leave your mail and we will contact you
-          <input class="modal-lable__input" />
+          <input 
+          class="modal-lable__input" 
+          type="text"
+          name="user-email"
+          placeholder="E-mail"
+          id="modal-more-input"/>
         </lable>
-        <button class="modal-more__button">send</button>
+        <button class="modal-more__button" type="button">send</button>
       </div>
     </div>
   </div>

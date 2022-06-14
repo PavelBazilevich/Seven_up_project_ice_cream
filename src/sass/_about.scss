@@ -3,10 +3,20 @@
   position: relative;
   width: 100%;
   height: 100%;
-  padding-bottom: 60px;
+  padding: 30px 0;
   z-index: 0;
 
   background-color: var(--light-pink-backgrount-color);
+  @media screen and (min-width: 480px) {
+    padding: 40px 0;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 50px 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 60px 0;
+  }
 }
 
 .about::before {
@@ -76,7 +86,6 @@
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 60px;
 
   font-family: 'Titan One';
   font-style: normal;
@@ -337,6 +346,7 @@
 
   @media screen and (min-width: 1280px) {
     width: 1100px;
+    height: 600px;
   }
 }
 
@@ -457,6 +467,8 @@
   left: 0%;
   width: 100%;
   height: 100%;
+  border-radius: 10px;
+  border: 2px solid var(--accent-color);
 }
 .modal-more__vidio {
   position: absolute;
@@ -487,7 +499,7 @@
 
   @media screen and (min-width: 1280px) {
     left: 5%;
-    top: 15%;
+    top: 18%;
     transform: translate(-3%, -20%);
     width: 600px;
     height: 300px;
@@ -582,20 +594,127 @@
 .modal-more__email {
   position: absolute;
   display: flex;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%);
+  @media screen and (min-width: 320px) {
+    bottom: 7%;
+  }
+  @media screen and (min-width: 480px) {
+    bottom: 5%;
+  }
+  @media screen and (min-width: 768px) {
+    bottom: 10%;
+  }
+  @media screen and (min-width: 1280px) {
+    bottom: 15%;
+  }
 }
 .modal-more__lable {
-  position: relative;
+  display: flex;
+  flex-direction: column;
 
   font-family: 'Titan One';
   font-style: normal;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 10px;
   line-height: 1.1;
   color: var(--accent-color);
+  @media screen and (min-width: 320px) {
+    font-size: 12px;
+  }
+  @media screen and (min-width: 480px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+  }
 }
 .modal-lable__input {
-  position: absolute;
+  margin-top: 10px;
+  width: 100px;
+  height: 25px;
+  padding-left: 10px;
+  border: none;
+  border-radius: 8px;
+  @media screen and (min-width: 320px) {
+    width: 30px;
+    width: 140px;
+    font-size: 12px;
+  }
+  @media screen and (min-width: 480px) {
+    width: 280px;
+    height: 40px;
+    font-size: 14px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 480px;
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 500px;
+    font-size: 17px;
+  }
 }
 .modal-more__button {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 30px;
+  padding: 10px;
+
+  width: 70px;
+  height: 25px;
+
+  border: none;
+  border-radius: 22px;
+
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 1.1;
+
+  color: rgb(90, 90, 90);
+  background-color: white;
+  @media screen and (min-width: 320px) {
+    margin-top: 30px;
+    width: 90px;
+    height: 30px;
+    font-size: 12px;
+  }
+  @media screen and (min-width: 480px) {
+    margin-top: 40px;
+    margin-left: 10px;
+    width: 100px;
+    height: 35px;
+    font-size: 14px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 30px;
+    margin-left: 15px;
+    width: 110px;
+    height: 35px;
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+  }
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    color: var(--accent-color);
+    background-color: var(--hover-button-background-color);
+  }
 }
