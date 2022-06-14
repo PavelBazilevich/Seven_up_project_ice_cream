@@ -22,14 +22,10 @@
         </ul>
         <ul class="contacts-list list">
           <li class="contacts-item">
-            <a class="contacts-link link" href="tel:+61(0)383766284"
-              >+61(0) 383 766 284</a
-            >
+            <a class="contacts-link link" href="tel:+61(0)383766284">+61(0) 383 766 284</a>
           </li>
           <li class="contacts-item">
-            <a class="contacts-link link" href="mailto:noreply@envato.com"
-              >noreply@envato.com</a
-            >
+            <a class="contacts-link link" href="mailto:noreply@envato.com">noreply@envato.com</a>
           </li>
         </ul>
       </li>
@@ -53,14 +49,10 @@
         </ul>
         <ul class="contacts-list list">
           <li class="contacts-item">
-            <a class="contacts-link link" href="tel:+61(0)383766284"
-              >+61(0) 383 766 284</a
-            >
+            <a class="contacts-link link" href="tel:+61(0)383766284">+61(0) 383 766 284</a>
           </li>
           <li class="contacts-item">
-            <a class="contacts-link link" href="mailto:noreply@envato.com"
-              >noreply@envato.com</a
-            >
+            <a class="contacts-link link" href="mailto:noreply@envato.com">noreply@envato.com</a>
           </li>
         </ul>
       </li>
@@ -84,14 +76,10 @@
         </ul>
         <ul class="contacts-list list">
           <li class="contacts-item">
-            <a class="contacts-link link" href="tel:+61(0)383766284"
-              >+61(0) 383 766 284</a
-            >
+            <a class="contacts-link link" href="tel:+61(0)383766284">+61(0) 383 766 284</a>
           </li>
           <li class="contacts-item">
-            <a class="contacts-link link" href="mailto:noreply@envato.com"
-              >noreply@envato.com</a
-            >
+            <a class="contacts-link link" href="mailto:noreply@envato.com">noreply@envato.com</a>
           </li>
         </ul>
       </li>
@@ -101,14 +89,12 @@
         <button type="button" class="contacts-btn secondary">
           Our Locations
           <svg class="contacts-btn-icon secondary" width="8" height="10">
-            <use
-              href="./images/icons/symbol-defs.svg#icon-btn-vector-light"
-            ></use>
+            <use href="./images/icons/symbol-defs.svg#icon-btn-vector-light"></use>
           </svg>
         </button>
       </li>
       <li class="contacts-btn-item">
-        <button type="button" class="contacts-btn main">
+        <button type="button" class="contacts-btn main  franchise-modal">
           Franchise
           <svg class="contacts-btn-icon main" width="8" height="10">
             <use href="./images/icons/symbol-defs.svg#icon-btn-vector"></use>
@@ -116,5 +102,64 @@
         </button>
       </li>
     </ul>
+  </div>
+
+  <!-- Modal -->
+
+  <div class="franchise-backdrop is-hidden">
+    <div class="franchise-modal-content">
+      <button type="button" class="franchise-modal-close-btn">
+        <svg class="franchise-modal-close-icon" width="16" height="16">
+          <use href="./images/icons/symbol-defs.svg#close"></use>
+        </svg>
+      </button>
+      <p class="franchise-modal-tittle">PROFITABLE BUSINESS BY FRANCHISE</p>
+      <div class="franchise-modal-text-box">
+        <svg class="franchise-modal-first-icon-text" width="18" height="18">
+          <use href="./images/icons/symbol-defs.svg#icon-checkmark"></use>
+        </svg>
+        <p class="franchise-top-text">sell high quality ice-cream</p>
+      </div>
+      <div class="franchise-modal-text-box">
+        <svg class="franchise-modal-second-icon-text" width="18" height="18">
+          <use href="./images/icons/symbol-defs.svg#icon-checkmark"></use>
+        </svg>
+        <p class="franchise-bottom-text">earn between $ 400 and $ 50,000 on a stable business</p>
+      </div>
+      <div class="franchise-modal-box">
+        <p class="franchise-modal-box-title">Learn more</p>
+        <div class="franchise-modal-field">
+          <label for="name" class="franchise-modal-label">Name</label>
+          <div class="franchise-modal-input-content">
+            <input type="text" name="username" id="name" class="franchise-modal-input" minlength="2" required autofocus
+              placeholder=" ">
+            <svg class="franchise-modal-icon" width="18" height="18">
+              <use href="./images/icons/symbol-defs.svg#icon-user"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="franchise-modal-field">
+          <label for="tel" class="franchise-modal-label">Telephone</label>
+          <div class="franchise-modal-input-content">
+            <input type="tel" name="telephone" id="tel" class="franchise-modal-input" minlength="17"
+              title="+38(096)-111-11-11" required placeholder=" ">
+            <svg class="franchise-modal-icon" width="18" height="18">
+              <use href="./images/icons/symbol-defs.svg#icon-phone"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="franchise-modal-field">
+          <label for="mail" class="franchise-modal-label">E-mail</label>
+          <div class="franchise-modal-input-content">
+            <input type="email" name="email" id="mail" class="franchise-modal-input" required placeholder=" ">
+            <svg class="franchise-modal-icon" width="18" height="18">
+              <use href="./images/icons/symbol-defs.svg#icon-mail"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="franchise-modal-btn"><span class="franchise-modal-btn-name">Send</span>
+      </button>
+    </div>
   </div>
 </section>
