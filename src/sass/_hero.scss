@@ -1,36 +1,36 @@
 .hero {
   background-color: var(--darc-pink-background-color);
   overflow: hidden;
+  padding-top: 83px;
+  padding-bottom: 75px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 43px;
+    padding-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 54px;
+    padding-bottom: 76px;
+  }
 
   &-container {
     display: flex;
     position: relative;
-    padding-top: 83px;
-    padding-bottom: 75px;
-
-    @media screen and (min-width: 768px) {
-      padding-top: 43px;
-      padding-bottom: 40px;
-    }
-
-    @media screen and (min-width: 1280px) {
-      padding-top: 54px;
-      padding-bottom: 76px;
-    }
   }
 }
 
 .hero-box-left {
   position: absolute;
-  top: 194px;
+  top: 111px;
   z-index: 1;
 
   @media screen and (min-width: 768px) {
-    top: 102px;
+    top: 59px;
   }
 
   @media screen and (min-width: 1280px) {
-    top: 147px;
+    top: 94px;
   }
 }
 
@@ -361,7 +361,7 @@
 
   &-img {
     position: absolute;
-    bottom: 0;
+    bottom: -40px;
     animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 3s; /* don't forget to set a duration! */
 
@@ -375,6 +375,7 @@
       right: 16px;
       width: 304px;
       height: 241px;
+      bottom: -76px;
     }
   }
 }
