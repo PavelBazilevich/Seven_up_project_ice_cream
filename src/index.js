@@ -47,6 +47,7 @@
   }
 })();
 
+
 (() => {
   const refs = {
     openAboutBtn: document.querySelector('[data-about-open]'),
@@ -63,6 +64,7 @@
     refs.body.classList.toggle('no-scroll');
   }
 })();
+
 
 (() => {
   const refs = {
