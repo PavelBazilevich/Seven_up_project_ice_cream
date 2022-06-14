@@ -37,6 +37,7 @@
 
   @media screen and (min-width: 1280px) {
     min-width: 395px;
+    padding: 40px;
   }
 
   &:not(:last-child) {
@@ -44,6 +45,10 @@
       margin-bottom: 20px;
     }
     @media screen and (min-width: 768px) {
+      margin-right: 16px;
+    }
+
+    @media screen and (min-width: 1280px) {
       margin-right: 32px;
     }
   }
