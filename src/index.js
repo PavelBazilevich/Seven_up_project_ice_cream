@@ -65,6 +65,7 @@
   }
 })();
 
+
 (() => {
   const refs = {
     openFranchiseBtn: document.querySelector(".franchise-modal"),
@@ -79,6 +80,25 @@
   function toggleMenu() {
     refs.franchise.classList.toggle("is-hidden");
     refs.body.classList.toggle("no-scroll");
+  }
+})();
+
+
+
+(() => {
+  const refs = {
+    openMapBtn: document.querySelector('[data-map-open]'),
+    closeMapBtn: document.querySelector('[data-map-close]'),
+    map: document.querySelector('[data-map]'),
+    body: document.querySelector('body'),
+  };
+
+  refs.openMapBtn.addEventListener('click', toggleMap);
+  refs.closeMapBtn.addEventListener('click', toggleMap);
+
+  function toggleMap() {
+    refs.map.classList.toggle('is-hidden');
+    refs.body.classList.toggle('no-scroll');
   }
 })();
 

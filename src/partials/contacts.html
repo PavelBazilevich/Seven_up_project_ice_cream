@@ -86,7 +86,7 @@
     </ul>
     <ul class="contacts-btn-list list">
       <li class="contacts-btn-item">
-        <button type="button" class="contacts-btn secondary">
+        <button type="button" class="contacts-btn secondary" data-map-open>
           Our Locations
           <svg class="contacts-btn-icon secondary" width="8" height="10">
             <use href="./images/icons/symbol-defs.svg#icon-btn-vector-light"></use>
@@ -160,6 +160,23 @@
       </div>
       <button type="submit" class="franchise-modal-btn"><span class="franchise-modal-btn-name">Send</span>
       </button>
+    </div>
+  </div>
+
+
+  <div class="contacts-loc-backdrop is-hidden" data-map>
+    <div class="contacts-loc-modal">
+      <button class="contacts-loc-modal-close-icon" data-map-close>
+        <svg class="icon" width="20" height="20">
+          <use href="./images/icons/symbol-defs.svg#close"></use>
+        </svg>
+      </button>
+      <div class="contacts-loc-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1234.6444256168227!2d30.514488587014288!3d50.42909347510448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf1d8bc01717%3A0xc2701f3eb4be7217!2sAntonovycha%20St%2C%2065%2C%20Kyiv%2C%2002000!5e0!3m2!1sen!2sua!4v1655202363198!5m2!1sen!2sua"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </div>
   </div>
 </section>
