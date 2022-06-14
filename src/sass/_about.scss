@@ -447,16 +447,16 @@
   @media screen and (min-width: 768px) {
     position: absolute;
     display: flex;
-    width: 150px;
-    height: 150px;
-    bottom: 5%;
-    left: 90%;
-    transform: translate(-60%);
+    width: 135px;
+    height: 135px;
+    bottom: 16%;
+    left: 77%;
   }
-
   @media screen and (min-width: 1280px) {
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
+    bottom: 8%;
+    left: 80%;
   }
 }
 
@@ -579,7 +579,7 @@
   }
   @media screen and (min-width: 768px) {
     color: black;
-    background-color: #f7d0da00;
+    background-color: #ffffff00;
     font-size: 16px;
   }
 

@@ -6,7 +6,30 @@
     </p>
     <div class="content">
       <!-- Images -->
-      <img class="content__img" src="./images/Ice-cream_pictures/about_cow-milk_desk_2x.png" alt="cau" />
+      <picture>
+        <source
+          srcset="
+          ./images/Ice-cream_pictures/about_cow-milk_desk_1x.png x1,
+          ./images/Ice-cream_pictures/about_cow-milk_desk_2x.png x2
+          "
+          type="image/png"
+          media="(min-width:1280px)"
+        />
+        <source
+          srcset="
+          ./images/Ice-cream_pictures/about_cow-milk_tab_1x.png x1,
+            ./images/Ice-cream_pictures/about_cow-milk_tab_2x.png x2
+          "
+          type="image/png"
+          media="(min-width:768px)"
+        />
+        <img
+          class="content__img"
+          src="./images/Ice-cream_pictures/about_cow-milk_mob_1x.png"
+          alt="caws"
+        />
+      </picture>
+      <!-- <img class="content__img" src="./images/Ice-cream_pictures/about_cow-milk_desk_2x.png" alt="cau" /> -->
       <!-- Text -->
       <div class="content__inform">
         <p class="content__bold-text">
@@ -43,14 +66,60 @@
         </svg>
       </button>
       <p class="modal-more__title">Learn more</p>
-      <img
+      <picture>
+        <source
+          srcset="
+          ./images/Ice-cream_pictures/hero_ice-cream_desk_1x.png  x1,
+          ./images/Ice-cream_pictures/hero_ice-cream_desk_2x.png x2
+          "
+          type="image/png"
+          media="(min-width:1280px)"
+        />
+        <source
+          srcset="
+          ./images/Ice-cream_pictures/hero_ice-cream_tab_1x.png  x1,
+          ./images/Ice-cream_pictures/hero_ice-cream_tab_2x.png x2
+          "
+          type="image/png"
+          media="(min-width:768px)"
+        />
+        <img
+          class="modal-more__fon"
+          src="./images/Ice-cream_pictures/hero_ice-cream_mob_1x.png"
+          alt="caws"
+        />
+      </picture>
+      <!-- <img
         class="modal-more__fon"
         src="./images/Ice-cream_pictures/hero_ice-cream_tab_2x.png"
-      />
-      <img
+      /> -->
+      <picture>
+        <source
+          srcset="
+          ./images/Ice-cream_pictures/hero_milkjug_desk_1x.png  x1,
+          ./images/Ice-cream_pictures/hero_milkjug_desk_2x.png x2
+          "
+          type="image/png"
+          media="(min-width:1280px)"
+        />
+        <source
+          srcset="
+          ./images/Ice-cream_pictures/hero_milkjug_tab_1x.png  x1,
+          ./images/Ice-cream_pictures/hero_milkjug_tab_2x.png x2
+          "
+          type="image/png"
+          media="(min-width:768px)"
+        />
+        <img
+          class="modal-more__fon-tab-des"
+          src="./images/Ice-cream_pictures/hero_milkjug_desk_1x.png"
+          alt="caws"
+        />
+      </picture>
+      <!-- <img
         class="modal-more__fon-tab-des"
         src="./images/Ice-cream_pictures/hero_milkjug_desk_1x.png"
-      />
+      /> -->
       <div class="modal-more__vidio">
         <iframe
           src="https://www.youtube.com/embed/2Yd2HhKIsiE?controls=0"
@@ -72,7 +141,7 @@
           Aenean accumsan.
         </p>
       </div>
-      <div class="modal-more__email">
+      <form class="modal-more__email">
         <lable class="modal-more__lable" for="modal-more-input"
           >Leave your mail and we will contact you
           <input 
@@ -82,8 +151,8 @@
           placeholder="E-mail"
           id="modal-more-input"/>
         </lable>
-        <button class="modal-more__button" type="button">send</button>
-      </div>
+        <button class="modal-more__button" type="submit" for="modal-more-input">send</button>
+      </form>
     </div>
   </div>
 </section>
